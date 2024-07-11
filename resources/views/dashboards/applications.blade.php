@@ -1,5 +1,9 @@
 @extends('layouts.app')
 @section('content')
+<!-- Accordian css and script start-->
+<link href="{{ asset('dist/accordion/accordian1.css') }}" rel="stylesheet" type="text/css" /> 
+<script src="{{ asset('dist/accordion/script.js') }}" type="text/javascript"></script> 
+<!-- Accordian css and script start-->
 
 <!--Inner Heading start here-->
 <div class="innerheading">
