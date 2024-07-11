@@ -1,4 +1,5 @@
 @extends('layouts.app')
+
 @section('content')
     <!--Inner Heading start here-->
     <div class="innerheading">
@@ -17,29 +18,29 @@
 
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('website/PSPSteelFlyer.pdf') }}"
+                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('dist/PSPSteelFlyer.pdf') }}"
                             target="_blank" data-fancybox-group="gallery" title=""><img
-                                src="{{ asset('website/img/catalogue05.jpg') }}"></a> </div>
+                                src="{{ asset('dist/img/catalogue05.jpg') }}"></a> </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('website/img/catalogue01.jpg') }}"
+                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('dist/img/catalogue01.jpg') }}"
                             data-fancybox-group="gallery" title=""><img
-                                src="{{ asset('website/img/catalogue01.jpg') }}"></a> </div>
+                                src="{{ asset('dist/img/catalogue01.jpg') }}"></a> </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('website/img/catalogue02.jpg') }}"
+                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('dist/img/catalogue02.jpg') }}"
                             data-fancybox-group="gallery" title=""><img
-                                src="{{ asset('website/img/catalogue02.jpg') }}"></a> </div>
+                                src="{{ asset('dist/img/catalogue02.jpg') }}"></a> </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('website/img/catalogue03.jpg') }}"
+                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('dist/img/catalogue03.jpg') }}"
                             data-fancybox-group="gallery" title=""><img
-                                src="{{ asset('website/img/catalogue03.jpg') }}"></a> </div>
+                                src="{{ asset('dist/img/catalogue03.jpg') }}"></a> </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('website/img/catalogue04.jpg') }}"
+                    <div class="cataloguebox"> <a class="fancybox" href="{{ asset('dist/img/catalogue04.jpg') }}"
                             data-fancybox-group="gallery" title=""><img
-                                src="{{ asset('website/img/catalogue04.jpg') }}"></a> </div>
+                                src="{{ asset('dist/img/catalogue04.jpg') }}"></a> </div>
                 </div>
             </div>
         </div>
