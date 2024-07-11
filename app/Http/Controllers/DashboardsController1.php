@@ -1,8 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Mail\ContactFormMail;
-use Illuminate\Support\Facades\Mail;
+
 use Illuminate\Http\Request;
 
 class DashboardsController extends Controller
@@ -55,6 +54,16 @@ class DashboardsController extends Controller
         return view('dashboards.photo-gallery');
     }
 
+    public function contactus()
+    {
+        return view('dashboards.contact-us');
+    }
+
+    public function enquiry()
+    {
+        return view('dashboards.enquiry');
+    }
+
     public function sitemap()
     {
         return view('dashboards.sitemap');
@@ -69,37 +78,6 @@ class DashboardsController extends Controller
     {
         return view('dashboards.terms-and-condition');
     }
-    
-    public function contactus()
-    {
-        return view('dashboards.contactus');
-    }
-    public function enquiry()
-    {
-        return view('dashboards.enquiry');
-    }
-    
-    public function saveform(Request $request)
-    {
-        //dd($request);
-        // Validate the form data (example validation)
-        $validatedData = $request->validate([
-            'name' => 'required|string|max:255',
-            'email' => 'required|email|max:255',
-            'mobile' => 'required|string|max:20', 
-            'city' => 'required|string|max:100',
-            'state' => 'required|string|max:100',
-            'country' => 'required|string|max:100',
-            'message' => 'required',
-        ]);
-
-//        dd($validatedData);
-
-        // Send email notification
-        Mail::to('moin@puratech.in')->send(new ContactFormMail($validatedData));
-
-        // Redirect back with success message or any other logic
-        return redirect()->back()->with('success', 'Message sent successfully!');
-    }
 
 }
+

@@ -29,3 +29,6 @@ Route::get('/enquiry', [DashboardsController::class, 'enquiry'])->name('enquiry'
 Route::get('/sitemap', [DashboardsController::class, 'sitemap'])->name('sitemap');
 Route::get('/privacy-policy', [DashboardsController::class, 'privacypolicy'])->name('privacy-policy');
 Route::get('/terms-and-conditions', [DashboardsController::class, 'termsandconditions'])->name('terms-and-conditions');
+Route::get('/contact-us', [DashboardsController::class, 'contactus'])->name('dashboards.contactus');
+Route::get('/enquiry', [DashboardsController::class, 'enquiry'])->name('dashboards.enquiry');
+Route::post('/saveform', [DashboardsController::class, 'saveform'])->name('save.form');

@@ -23,8 +23,12 @@
         </div>
         <div class="col-md-3 col-sm-4 col-xs-12 rowmargin20">
           <h4>Procesess</h4>
-          <li><a href="{{ route('plasma-spraying')}}">Plasma Spraying </a></li>
+          <li><a href="plasma_trans_arc.html">Plasma Transferred ARC</a></li>
+          <li><a href="powder_flame_spray.html">Powder Flame Spraying</a></li>
+          <li><a href="arc_spraying.html">Arc Spraying</a></li>
           <li><a href="{{ route('hvofs')}}">High Velocity Oxygen Fuel Spraying</a></li>
+          <li><a href="{{ route('plasma-spraying')}}">Plasma Spraying </a></li>
+          
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 rowmargintabmob20">
           <h4>Industry</h4>
@@ -33,8 +37,8 @@
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 rowmargintabmob20">
           <h4>Other</h4>
-          <li><a href="{{ route('contact-us')}}">Contact us</a></li>
-          <li><a href="{{ route('enquiry')}}">Enquiry</a></li>
+          <li><a href="{{ route('dashboards.contactus')}}">Contact us</a></li>
+          <li><a href="{{ route('dashboards.enquiry')}}">Enquiry</a></li>
           <li><a href="{{ route('sitemap')}}">Sitemap</a></li>
           <li><a href="{{ route('privacy-policy')}}">Privacy Policy</a></li>
           <li><a href="{{ route('terms-and-conditions')}}">Terms and Conditions</a></li>

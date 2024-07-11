@@ -1,5 +1,10 @@
 @extends('layouts.app')
+
 @section('content')
+<!-- Accordian css and script start-->
+<link href="{{ asset('dist/accordion/accordian1.css') }}" rel="stylesheet" type="text/css" /> 
+<script src="{{ asset('dist/accordion/script.js') }}" type="text/javascript"></script> 
+<!-- Accordian css and script start-->
   <!--Collage start here-->
   <div class="collage">
     <div id="main-slider">
@@ -157,26 +162,26 @@ data-captionhidden="off">Achieve Diamond Like<br>
           <div class="textred14px">This is the right place if you are looking for coatings films like</div>
           <div class="compboxes">
             <div class="row">
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="{{ route('range-of-products')}}">
+              <div class="col-md-3 col-sm-6 col-xs-6"> 
+                <div class="solutionbox"> <a href="{{ route('range-of-products') }}#Tungsten">
                   <div class="solutionname">Tungsten <br/>
-                    Carbide</div>
+                    Carbide</div>             
                   <img src="{{ asset('dist/img/tungsten.jpg') }}" alt="Tungsten Carbide"/> </a> </div>
               </div>
-              <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="{{ route('range-of-products')}}">
+              <div class="col-md-3 col-sm-6 col-xs-6">  
+                <div class="solutionbox"> <a href="{{ route('range-of-products')}}#Ceramic">
                   <div class="solutionname">Ceramic <br/>
                     Coating</div> 
                   <img src="{{ asset('dist/img/ceramic_coating.jpg') }}" alt="Ceramic Coating"/> </a> </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="{{ route('range-of-products')}}">
+                <div class="solutionbox"> <a href="{{ route('range-of-products')}}#Chrome">
                   <div class="solutionname">Chrome <br/>
                     Oxide</div> 
                   <img src="{{ asset('dist/img/chrome.jpg') }}" alt="Chrome Oxide"/> </a> </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="{{ route('range-of-products')}}">
+                <div class="solutionbox"> <a href="{{ route('range-of-products')}}#Stellite">
                   <div class="solutionname">Stellite</div> 
                   <img src="{{ asset('dist/img/stellite.jpg') }}" alt="Stellite"/> </a> </div>
               </div>
@@ -325,3 +330,4 @@ data-captionhidden="off">Achieve Diamond Like<br>
   
   <!-- Middle Container End Here -->
 @endsection  
+
