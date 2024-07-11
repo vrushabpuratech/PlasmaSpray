@@ -207,6 +207,7 @@ data-captionhidden="off">Achieve Diamond Like<br>
                 <div class="topmargin10"><a href="{{ route('plasma-spraying')}}"><img src="{{ asset('dist/img/arrow_btn.png') }}" alt="read more"/></a></div>
               </div>
             </div>
+
             <div class="col-sm-6">
               <div class="productcatbox">
                 <h3><a href="{{ route('hvofs')}}">HVOF Coating
@@ -219,6 +220,7 @@ data-captionhidden="off">Achieve Diamond Like<br>
             </div>
           </div>
         </div>
+        
         <div class="col-md-5 col-sm-4">
           <div class="applicationsbox">
             <div id="accordion3">

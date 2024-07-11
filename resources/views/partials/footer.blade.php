@@ -23,8 +23,11 @@
         </div>
         <div class="col-md-3 col-sm-4 col-xs-12 rowmargin20">
           <h4>Procesess</h4>
-          <li><a href="{{ route('plasma-spraying')}}">Plasma Spraying </a></li>
+          <li><a href="{{ route('plasma-trans-arc')}}">Plasma Transferred Arc</a></li>
+          <li><a href="{{ route('powder-flame-spray')}}">Powder Flame Spraying</a></li>
+          <li><a href="{{ route('arc-spraying')}}">Arc Spraying</a></li>
           <li><a href="{{ route('hvofs')}}">High Velocity Oxygen Fuel Spraying</a></li>
+          <li><a href="{{ route('plasma-spraying')}}">Plasma Spraying </a></li>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 rowmargintabmob20">
           <h4>Industry</h4>

@@ -79,5 +79,21 @@ class DashboardsController extends Controller
         return view('dashboards.terms-and-condition');
     }
 
+    public function arcspraying()
+    {
+        return view('dashboards.arc-spraying');
+    }
+
+    public function powderflamespray()
+    {
+        return view('dashboards.powder-flame-spray');
+    }
+
+    public function plasmatransarc()
+    {
+        return view('dashboards.plasma-trans-arc');
+    }
+   
+   
 }
 
