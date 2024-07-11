@@ -1,0 +1,490 @@
+<!doctype html>
+<html>
+<head>
+<!--<script language="javascript" type="text/javascript">
+	function Redirect()
+	{		
+		if(document.getElementById("txtSearch").value != "")
+		{
+			document.location = "search.html?s="+document.getElementById("txtSearch").value+"";	}
+		else
+		{
+			alert("Please Enter Key Word");
+			return false;
+		}
+		return false;
+	}
+</script>-->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<META NAME="REVISIT-AFTER" CONTENT="7 days">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<!--<META NAME="description" CONTENT="Gate Valve (petrochemical)
+Segments (gas power station)
+Turbine rotor (power generation)
+Textile Component( textile)
+Metal Seated balls with Seats (fertilizers, petrochemicals)
+Impeller (pumps)
+Piston rod
+Pump Sleeves (pump)
+Aviation Component
+Bridle roll (steel industry)
+Pan
+Godets (textile)
+Step Cone Pulley (wire drawing)
+Boiler Tubes (studded and non studded)
+Rewinder Rolls (paper and pulp)
+Suspension Body (sugar industry)
+">-->
+    
+<meta charset="utf-8">
+<title>Plasm Spray Processors</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="fonts/font-awesome.css" rel="stylesheet" type="text/css">    
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+	
+<!-- Menu css and script start-->
+<script src="menu/jquery-latest.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="menu/navigation.css">
+<link rel="stylesheet" href="menu/navigation.dropdown.css">
+<!-- Menu css and script end-->
+	
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+<!--fancyBox main JS and CSS files start-->
+<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		 *  Simple image gallery. Uses default settings
+		 */
+
+		$('.fancybox').fancybox();
+
+		/*
+		 *  Different effects
+		 */
+
+		// Change title type, overlay closing speed
+		$(".fancybox-effects-a").fancybox({
+			helpers: {
+				title : {
+					type : 'outside'
+				},
+				overlay : {
+					speedOut : 0
+				}
+			}
+		});
+
+		// Disable opening and closing animations, change title type
+		$(".fancybox-effects-b").fancybox({
+			openEffect  : 'none',
+			closeEffect	: 'none',
+
+			helpers : {
+				title : {
+					type : 'over'
+				}
+			}
+		});
+
+		// Set custom style, close if clicked, change title type and overlay color
+		$(".fancybox-effects-c").fancybox({
+			wrapCSS    : 'fancybox-custom',
+			closeClick : true,
+
+			openEffect : 'none',
+
+			helpers : {
+				title : {
+					type : 'inside'
+				},
+				overlay : {
+					css : {
+						'background' : 'rgba(238,238,238,0.85)'
+					}
+				}
+			}
+		});
+
+		// Remove padding, set opening and closing animations, close if clicked and disable overlay
+		$(".fancybox-effects-d").fancybox({
+			padding: 0,
+
+			openEffect : 'elastic',
+			openSpeed  : 150,
+
+			closeEffect : 'elastic',
+			closeSpeed  : 150,
+
+			closeClick : true,
+
+			helpers : {
+				overlay : null
+			}
+		});
+
+		/*
+		 *  Button helper. Disable animations, hide close button, change title type and content
+		 */
+
+		$('.fancybox-buttons').fancybox({
+			openEffect  : 'none',
+			closeEffect : 'none',
+
+			prevEffect : 'none',
+			nextEffect : 'none',
+
+			closeBtn  : false,
+
+			helpers : {
+				title : {
+					type : 'inside'
+				},
+				buttons	: {}
+			},
+
+			afterLoad : function() {
+				this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+			}
+		});
+
+
+		/*
+		 *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+		 */
+
+		$('.fancybox-thumbs').fancybox({
+			prevEffect : 'none',
+			nextEffect : 'none',
+
+			closeBtn  : false,
+			arrows    : false,
+			nextClick : true,
+
+			helpers : {
+				thumbs : {
+					width  : 50,
+					height : 50
+				}
+			}
+		});
+
+		/*
+		 *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+		*/
+		$('.fancybox-media')
+			.attr('rel', 'media-gallery')
+			.fancybox({
+				openEffect : 'none',
+				closeEffect : 'none',
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				arrows : false,
+				helpers : {
+					media : {},
+					buttons : {}
+				}
+			});
+
+		/*
+		 *  Open manually
+		 */
+
+		$("#fancybox-manual-a").click(function() {
+			$.fancybox.open('1_b.jpg');
+		});
+
+		$("#fancybox-manual-b").click(function() {
+			$.fancybox.open({
+				href : 'iframe.html',
+				type : 'iframe',
+				padding : 5
+			});
+		});
+
+		$("#fancybox-manual-c").click(function() {
+			$.fancybox.open([
+				{
+					href : '1_b.jpg',
+					title : 'My title'
+				}, {
+					href : '2_b.jpg',
+					title : '2nd title'
+				}, {
+					href : '3_b.jpg'
+				}
+			], {
+				helpers : {
+					thumbs : {
+						width: 75,
+						height: 50
+					}
+				}
+			});
+		});
+
+
+	});
+</script>
+<!--fancyBox main JS and CSS files end-->    
+    
+</head>	
+
+<body>
+    
+<!--Right side Button start-->
+<div class="rightsidebtn">
+<ul>
+<li><a href="enquiry.html"><img src="img/enquirenow_btn.png" alt="Enquire Now"></a></li>
+    <li><a href="contactus.html"><img src="img/contactus_btn.png" alt="Contact us"></a></li>
+</ul>
+</div>
+<!--Right side Button end-->    
+
+<div class="mainwrapper">
+<!-- Header Start Here -->
+<div class="header">
+<div class="container">
+<div class="row">
+<div class="col-md-3 col-sm-6 col-xs-8">
+<div class="logo"><a href="default.html"><img src="img/logo.jpg" alt="Plasma Spray" title="plasma spary"/></a></div>
+</div>
+<div class="col-md-9 col-sm-6 col-xs-4">
+<div class="menu">
+<nav id="navigation" class="navigation">
+<div class="nav-header">
+<div class="nav-toggle"></div>
+</div>
+<div class="nav-menus-wrapper">
+<ul class="nav-menu">
+<li><a href="default.html">Home</a></li>
+<li><a href="#">About us</a>
+<ul class="nav-dropdown">
+<li><a href="aboutus.html">Company Profile</a></li>
+<li><a href="catalogue.html">Catalogue</a></li>
+</ul>	
+</li>
+<li><a href="#">Services</a>
+<ul class="nav-dropdown">
+<li><a href="scope.html">Scope of Services</a></li>
+<li><a href="rangeofproducts.html">Range of Products</a></li>
+</ul>	
+</li>
+<li><a href="#">Processes</a>
+<ul class="nav-dropdown">
+<li><a href="plasma_sparying.html">Plasma Spraying</a></li>
+<li><a href="hvofs.html">High Velocity Oxygen Fuel Spraying</a></li>	
+</ul>	
+</li>
+<li><a href="#">Industry</a>
+<ul class="nav-dropdown">
+<li><a href="applications.html">Applications</a></li>
+<li><a href="photogallery.html">Photo Gallery</a></li>
+</ul>	
+</li>    
+</ul>
+</div>
+</nav>
+</div>	
+</div>
+<!--<div class="col-md-3 col-sm-12 col-xs-12 callinfo hidden-sm hidden-xs">
+<div class="search">
+<input type="text" placeholder="Search" id="txtSearch" /><button class="searchbtn" onclick="return Redirect();"><img src="img/search.png" alt="search"/></button>
+</div>
+</div>-->
+</div>
+</div>
+</div>
+<!-- Header End Here -->
+
+<!--Inner Heading start here-->
+<div class="innerheading">
+<div class="container"><h1>Industry</h1></div>    
+</div>  
+<!--Inner Heading end here-->
+    
+<!--Middle content start here-->    
+<div class="whitecontarea">
+<div class="container">
+<div class="mainheading"><h2>Photo Gallery</h2></div>      
+<div class="row">
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg001.jpg" data-fancybox-group="gallery" title="Gate Valve (petrochemical)"><img src="img/pg001.jpg"></a>
+<div class="photogalleryheading"><h6>Gate Valve (petrochemical)</h6></div>        
+</div>    
+</div>  
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg002.jpg" data-fancybox-group="gallery" title="Segments (gas power station)"><img src="img/pg002.jpg"></a>
+<div class="photogalleryheading"><h6>Segments (gas power station)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg003.jpg" data-fancybox-group="gallery" title="Turbine rotor (power generation)"><img src="img/pg003.jpg"></a>
+<div class="photogalleryheading"><h6>Turbine rotor (power generation)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg004.jpg" data-fancybox-group="gallery" title="Textile Component( textile)"><img src="img/pg004.jpg"></a>
+<div class="photogalleryheading"><h6>Textile Component( textile)</h6></div>    
+</div>    
+</div> 
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg005.jpg" data-fancybox-group="gallery" title="Metal Seated balls with Seats (fertilizers, petrochemicals)"><img src="img/pg005.jpg"></a>
+<div class="photogalleryheading"><h6>Metal Seated balls with Seats (fertilizers, petrochemicals)</h6></div>    
+</div>    
+</div> 
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg006.jpg" data-fancybox-group="gallery" title="Impeller (pumps)"><img src="img/pg006.jpg"></a>
+<div class="photogalleryheading"><h6>Impeller (pumps)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg007.jpg" data-fancybox-group="gallery" title="Piston rod"><img src="img/pg007.jpg"></a>
+<div class="photogalleryheading"><h6>Piston rod</h6></div>    
+</div>    
+</div>    
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg008.jpg" data-fancybox-group="gallery" title="Pump Sleeves (pump)"><img src="img/pg008.jpg"></a>
+<div class="photogalleryheading"><h6>Pump Sleeves (pump)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg009.jpg" data-fancybox-group="gallery" title="Aviation Component"><img src="img/pg009.jpg"></a>
+<div class="photogalleryheading"><h6>Aviation Component</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg010.jpg" data-fancybox-group="gallery" title="Bridle roll (steel industry)"><img src="img/pg010.jpg"></a>
+<div class="photogalleryheading"><h6>Bridle roll (steel industry)</h6></div>    
+</div>    
+</div>    
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg011.jpg" data-fancybox-group="gallery" title="Pan"><img src="img/pg011.jpg"></a>
+<div class="photogalleryheading"><h6>Pan</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg012.jpg" data-fancybox-group="gallery" title="Godets (textile)"><img src="img/pg012.jpg"></a>
+<div class="photogalleryheading"><h6>Godets (textile)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg013.jpg" data-fancybox-group="gallery" title="Step Cone Pulley (wire drawing)"><img src="img/pg013.jpg"></a>
+<div class="photogalleryheading"><h6>Step Cone Pulley (wire drawing)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg014.jpg" data-fancybox-group="gallery" title="Boiler Tubes (studded and non studded)"><img src="img/pg014.jpg"></a>
+<div class="photogalleryheading"><h6>Boiler Tubes (studded and non studded)</h6></div>    
+</div>    
+</div>
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg015.jpg" data-fancybox-group="gallery" title="Rewinder Rolls (paper and pulp)"><img src="img/pg015.jpg"></a>
+<div class="photogalleryheading"><h6>Rewinder Rolls (paper and pulp)</h6></div>    
+</div>    
+</div>    
+<div class="col-md-3 col-sm-4">
+<div class="photogallerybox">
+<a class="fancybox" href="img/pg016.jpg" data-fancybox-group="gallery" title="Suspension Body (sugar industry)"><img src="img/pg016.jpg"></a>
+<div class="photogalleryheading"><h6>Suspension Body (sugar industry)</h6></div>    
+</div>    
+</div>    
+</div>
+</div>    
+</div>
+<!--Middle content end here-->
+    
+<!-- Footer Container Start Here -->
+<div class="footer">
+<div class="container">
+<div class="row">
+<div class="col-md-1 col-sm-2">
+<h4><a href="#">Home</a></h4>	
+</div>
+<div class="col-md-2 col-sm-6 col-xs-12">
+<div class="row">
+<div class="col-md-12 col-xs-6">
+<h4>About us</h4>	
+<li><a href="aboutus.html">Company Profile</a></li>
+<li><a href="catalogue.html">Catalogue</a></li>    
+</div>
+<div class="col-md-12 col-xs-6">
+<div class="rowmargindesk20">    
+<h4>Services</h4>	
+<li><a href="scope.html">Scope of Services</a></li>
+<li><a href="rangeofproducts.html">Range Of Products</a></li>    
+</div>        
+</div>    
+</div>    
+</div>	
+<div class="col-md-3 col-sm-4 col-xs-12 rowmargin20">
+<h4>Procesess</h4>	
+<li><a href="plasma_trans_arc.html">Plasma Transferred ARC</a></li>
+<li><a href="powder_flame_spray.html">Powder Flame Spraying</a></li>
+<li><a href="arc_spraying.html">Arc Spraying</a></li>
+<li><a href="hvofs.html">High Velocity Oxygen Fuel Spraying</a></li>
+<li><a href="plasma_sparying.html">Plasma Spraying </a></li>
+</div>	
+<div class="col-md-2 col-sm-4 col-xs-6 rowmargintabmob20">
+<h4>Industry</h4>	
+<li><a href="applications.html">Applications</a></li>
+<li><a href="photogallery.html">Photo Gallery</a></li>
+</div>		
+<div class="col-md-2 col-sm-4 col-xs-6 rowmargintabmob20">
+<h4>Other</h4>	
+<li><a href="contactus.html">Contact us</a></li>
+<li><a href="enquiry.html">Enquiry</a></li>
+<li><a href="sitemap.html">Sitemap</a></li>
+<li><a href="privacypolicy.html">Privacy Policy</a></li>
+<li><a href="termsnconditions.html">Terms and Conditions</a></li>
+</div>	
+<div class="col-md-2 col-sm-4 col-xs-12 rowmargintabmob20">
+<h4>Contact us</h4>	
+<li><img src="img/phone.png" alt="phone"> +91 9820718722 <br class="hidden-xs">
+&nbsp; &nbsp; &nbsp;9820231088</li>
+<li><img src="img/email.png" alt="email"> <a href="mailto:psp@plasmaspray.co.in">psp@plasmaspray.co.in</a></li>
+</div>	
+</div>
+<div class="footersublinks topmargin30 text-center">
+	Plasma Spray India   <span>|</span>   Thermal spray India   <span>|</span>   Ceramic coating India   <span>|</span>   Tungsten Carbide Coating India   <span>|</span>   HVOF Coating India   <span>|</span>   Plasma Coating India   <span>|</span>   Surface Coating India
+TBC Coating India   <span>|</span>   Zirconia Coating India   <span>|</span>   Arc Spray India   <span>|</span>   Twin Wire Arc India   <span>|</span>   Flame Spray India   <span>|</span>   Stellite Coating India   <span>|</span>   Plasma Transferred Arc India   <span>|</span>   Hydle Coating India
+</div>
+<div class="text-center topmargin20">© Copyright <script>document.write(new Date().getFullYear())</script>. All Rights Reserved Plasma Spray Processors</div>
+</div>	
+</div>	
+<!-- Footer Container Start Here -->	
+	
+</div>	
+	
+<!-- Menu css and script start-->
+<script type="text/javascript" src="menu/navigation.js"></script> 
+<script type="text/javascript">
+	$(document).ready(function(){				
+		$("#navigation").navigation();	
+	});
+</script>
+<!-- Menu css and script end-->
+    
+</body>
+</html>

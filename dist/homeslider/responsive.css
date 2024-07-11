@@ -1,0 +1,31 @@
+@media (min-width:768px) and (max-width:991px){
+
+#slider-overlay{
+    height: 0;
+}
+#main-slider{
+    height: auto;
+}
+#home-page {
+    margin-top: 50px;
+}
+
+.captionblock{
+	display:none;	
+}
+
+}
+@media (max-width:767px){
+#main-slider{
+    height: auto;
+}
+#home-page {
+    margin-top: 50px;
+}
+}
+
+@media (max-width:480px){
+
+
+}
+

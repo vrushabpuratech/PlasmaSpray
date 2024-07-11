@@ -1,0 +1,63 @@
+#accordion3 {
+	width:100%; 
+	margin:0px auto; 
+	border:0px solid #333; 
+	border-top:none; 
+}
+.accordion3 {
+	width:100%; 
+	color:#0e161a;
+	padding:0px;
+	margin:0px;
+}
+.accordion3 dt {
+	background:url(../img/arrowdown.png) no-repeat right center #efefef;
+	font-size:14px;
+	cursor:#0e161a;  
+	padding:10px 10px;
+	font-weight:700;
+	border-top:solid 2px #fff;
+	line-height:20px;
+	cursor:pointer;
+}
+.accordion3 dt:first-child {
+	border-top:solid 0px #fff;
+}
+.accordion3 dt:hover {
+    
+}
+.accordion3 .open {
+	background: url(../img/arrowup.png) no-repeat right center #1a4d85; 
+	padding:10px 10px;
+	color:#fff; 
+}
+.accordion3 dd {
+	overflow:hidden; 
+	background-position:left; 
+	margin-left:0px;	
+}
+.content_hide {
+    padding-top: 10px;
+	padding-bottom:20px;
+	font-size:14px;
+	color:#0e161a;
+	line-height:22px;
+}
+.content_hide ul {
+	padding:0px;
+	margin:0px 0px 0px 13px;	
+}
+.content_hide ul li {
+	list-style-type:disc;
+	margin:0px 0px;
+	padding:3px 0px;
+	line-height:18px;
+	text-align:left;	
+}
+
+
+
+
+
+
+

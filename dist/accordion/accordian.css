@@ -1,0 +1,63 @@
+#accordion3 {
+	width:100%; 
+	margin:0px auto; 
+	border:0px solid #333; 
+	border-top:none; 
+}
+.accordion3 {
+	width:100%; 
+	color:#1a4d85;
+	padding:0px;
+	margin:0px;
+    border-bottom:solid 1px #000;
+}
+.accordion3 dt {
+	background:url(../img/plusicon.png) no-repeat right center;
+	font-size:20px;
+	cursor:#1a4d85;  
+	padding:15px 0px;
+	font-weight:700;
+	border-top:solid 1px #000;
+	line-height:20px;
+	cursor:pointer;
+}
+.accordion3 dt:first-child {
+	border-top:solid 0px #000;
+}
+.accordion3 dt:hover {
+	color:#1a4d85;
+}
+.accordion3 .open {
+	background: url(../img/minusicon.png) no-repeat right center; 
+	padding:15px 0px;
+	color:#1a4d85; 
+}
+.accordion3 dd {
+	overflow:hidden; 
+	background-position:left; 
+	margin-left:0px;	
+}
+.content_hide {
+	padding-bottom:20px;
+	font-size:14px;
+	color:#0e161a;
+	line-height:22px;
+}
+.content_hide ul {
+	padding:0px;
+	margin:0px 0px 0px 18px;	
+}
+.content_hide ul li {
+	list-style-type:disc;
+	margin:0px 0px;
+	padding:3px 0px;
+	line-height:18px;
+	text-align:left;	
+}
+
+
+
+
+
+
+
