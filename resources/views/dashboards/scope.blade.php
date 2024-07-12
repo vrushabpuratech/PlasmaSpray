@@ -24,14 +24,14 @@
     </div>        
     </div>
     
-    <div class="col-sm-6 rowmargin"><img src="{{ asset('website/img/servicesimg.jpg') }}" class="img-responsive" alt="Typical problem and coating choices"></div>    
+    <div class="col-sm-6 rowmargin"><img src="{{ asset('dist/img/servicesimg.jpg') }}" class="img-responsive" alt="Typical problem and coating choices"></div>    
     </div>
     <div class="mainheading topmargin30"><h4>What are the typical problems and coating choices available to solve them?</h4></div>  
     <div class="row">
-    <div class="col-sm-6"><img src="{{ asset('website/img/benefits_diagram01.jpg') }}" class="img-responsive" alt="Problems faced by Industry">
+    <div class="col-sm-6"><img src="{{ asset('dist/img/benefits_diagram01.jpg') }}" class="img-responsive" alt="Problems faced by Industry">
     <div class="textred13bold topmargin5"><em>Problems faced by Industry</em></div>    
     </div>
-    <div class="col-sm-6 rowmargin20"><img src="{{ asset('website/img/benefits_diagram02.jpg') }}" alt="Types of Costing" class="img-responsive">
+    <div class="col-sm-6 rowmargin20"><img src="{{ asset('dist/img/benefits_diagram02.jpg') }}" alt="Types of Costing" class="img-responsive">
     <div class="textred13bold topmargin5"><em>Types of Coatings</em></div>    
     </div>    
     </div>    

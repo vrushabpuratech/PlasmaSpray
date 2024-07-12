@@ -28,7 +28,7 @@
     </div>
     </div>
     <div class="col-sm-4 rowmargin">
-    <div class="innerimgbox"><img src="{{ asset('website/img/rangeofproduct.jpg') }}" class="img-responsive"></div>    
+    <div class="innerimgbox"><img src="{{ asset('dist/img/rangeofproduct.jpg') }}" class="img-responsive"></div>    
     </div>        
     </div>
     <hr style="margin: 30px 0px;">
