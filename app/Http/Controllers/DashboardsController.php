@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactFormMail;
+use App\Mail\EnquiryFormMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
@@ -76,11 +77,8 @@ class DashboardsController extends Controller
         return view('dashboards.contactus');
     }
 
-    
-
-    public function savedform(Request $request)
+    public function enquiryform(Request $request)
     {
-        //dd($request);
         $validatedData = $request->validate([
             'partname' => 'string|max:255',
             'function_of_coating' => 'string',
@@ -102,10 +100,12 @@ class DashboardsController extends Controller
             'address' => 'nullable|string',
             'remarks' => 'nullable|string',
         ]);
-        dd($validatedData);
+
+        Mail::to('vrushab@puratech.in')->send(new EnquiryFormMail($validatedData));
+
         return redirect()->back()->with('success', 'Message sent successfully!');
     }
-    
+
     public function enquiry()
     {
         return view('dashboards.enquiry');
@@ -113,8 +113,6 @@ class DashboardsController extends Controller
 
     public function saveform(Request $request)
     {
-        //dd($request);
-        // Validate the form data (example validation)
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
@@ -125,15 +123,10 @@ class DashboardsController extends Controller
             'message' => 'required',
         ]);
 
-        //  dd($validatedData);
-
-        // Send email notification
         Mail::to('moin@puratech.in')->send(new ContactFormMail($validatedData));
 
-        // Redirect back with success message or any other logic
         return redirect()->back()->with('success', 'Message sent successfully!');
     }
-
 
     public function arcspraying()
     {

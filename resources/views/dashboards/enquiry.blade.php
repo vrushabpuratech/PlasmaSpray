@@ -7,6 +7,8 @@
         </div>
     </div>
     <!--Inner Heading end here-->
+    
+
 
     <!-- Middle Container Start Here -->
     <div class="whitecontarea">
@@ -14,7 +16,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h4>Fill in Your Coating Detail</h4>
-                    <form method="POST" action="{{ route('saved.form') }}">
+                    <form method="POST" action="{{ route('enquiryform') }}">
                         @csrf
                         <div class="row">
                             <div class="col-md-4 col-sm-6">
@@ -86,30 +88,44 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Dia of Job" class="form-control" name="diaofjob"
-                                        required> <span class="text12grey">units in mm/inch</span>
+                                    <input type="text" placeholder="Dia of Job" class="form-control" name="diaofjob" required>
+                                    <span class="text12grey">units in mm/inch</span>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Coating Length of Job" class="form-control"
-                                        name="coating_length_of_job" required> <span class="text12grey">units in
-                                        mm/inch</span>
+                                    <input type="text" placeholder="Coating Length of Job" class="form-control" name="coating_length_of_job" required>
+                                    <span class="text12grey">units in mm/inch</span>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Total Length of Job" class="form-control"
-                                        name="total_length_of_job" required> <span class="text12grey">units in
-                                        mm/inch</span>
+                                    <input type="text" placeholder="Total Length of Job" class="form-control" name="total_length_of_job" required>
+                                    <span class="text12grey">units in mm/inch</span>
                                 </div>
                             </div>
                             <div class="col-sm-3">
                                 <div class="form-group">
-                                    <input type="text" placeholder="Weight of Job" class="form-control"
-                                        name="weight_of_job" required> <span class="text12grey">optional units in kgs</span>
+                                    <input type="text" placeholder="Weight of Job" class="form-control" name="weight_of_job" required>
+                                    <span class="text12grey">optional units in kgs</span>
                                 </div>
                             </div>
+                            
+                            
+                            <script>
+                            $(document).ready(function() {
+                                // Restrict input to only numbers and decimal points for specified fields
+                                $('input[name="diaofjob"], input[name="coating_length_of_job"], input[name="total_length_of_job"], input[name="weight_of_job"], input[name="contact_no"]').keypress(function(event) {
+                                    var charCode = (event.which) ? event.which : event.keyCode;
+                                    var inputValue = event.target.value + String.fromCharCode(charCode);
+                            
+                                    // Allow only digits (0-9), decimal point (.), and backspace (8)
+                                    if (!/^\d*\.?\d*$/.test(inputValue) && charCode !== 8) {
+                                        event.preventDefault();
+                                    }
+                                });
+                            });
+                            </script>
                             <div class="col-sm-6">
                                 <div class="form-group" id="drawing">
                                     Drawing or Sketch of Component Available &nbsp; <span class="check_radio">
