@@ -38,4 +38,5 @@ Route::get('/plasma-spraying', [DashboardsController::class, 'plasmaspraying'])-
 Route::get('/contact-us', [DashboardsController::class, 'contactus'])->name('dashboards.contactus');
 Route::get('/enquiry', [DashboardsController::class, 'enquiry'])->name('dashboards.enquiry');
 Route::post('/saveform', [DashboardsController::class, 'saveform'])->name('save.form');
+Route::post('/savedform', [DashboardsController::class, 'savedform'])->name('saved.form');
 

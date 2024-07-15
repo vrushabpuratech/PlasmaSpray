@@ -64,7 +64,7 @@
 </div>    
 </div>    
 </div>
-
+{{-- form --}}
 <div class="col-md-6 rowmargin1">
 <form method="POST" action="{{ route('save.form') }}">
 @csrf
