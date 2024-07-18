@@ -80,7 +80,7 @@
 <div class="form-group"><input type="email" class="form-control" placeholder="Email" name="email" required></div>    
 </div>
 <div class="col-sm-6">
-<div class="form-group"><input type="text" class="form-control" placeholder="Mobile" name="mobile" required></div>    
+<div class="form-group"><input type="text" class="form-control" placeholder="Mobile" name="mobile" class="numeric" required></div>    
 </div> 
 <div class="col-sm-6">
 <div class="form-group"><input type="text" class="form-control" placeholder="City" name="city" ></div>    
@@ -106,4 +106,20 @@
 </div>    
 </div>
 <!--Middle content end here-->
+<script>
+    $(document).ready(function() {
+                                // Restrict input to only numbers and decimal points for specified fields
+        $('input[name="mobile"]').keypress(function(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
+        var inputValue = event.target.value + String.fromCharCode(charCode);
+                            
+        // Allow only digits (0-9), decimal point (.), and backspace (8)
+        if (!/^\d*\.?\d*$/.test(inputValue) && charCode !== 8) {
+            event.preventDefault();
+        }
+    });
+});
+</script>
 @endsection  
+
+
