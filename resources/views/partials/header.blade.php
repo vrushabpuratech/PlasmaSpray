@@ -29,7 +29,7 @@
                                   </li>
                                   <li><a href="#">Processes</a>
                                       <ul class="nav-dropdown">
-                                          <li><a href="{{ route('plasma-trans-arc') }}">Plasma Transferred Arc</a></li>
+                                          <!-- <li><a href="{{ route('plasma-trans-arc') }}">Plasma Transferred Arc</a></li> -->
                                           <li><a href="{{ route('powder-flame-spray') }}">Powder Flame Spraying</a></li>
                                           <li><a href="{{ route('arc-spraying') }}">Arc Spraying</a></li>
                                           <li><a href="{{ route('hvofs') }}">High Velocity Oxygen Fuel Spraying</a>
