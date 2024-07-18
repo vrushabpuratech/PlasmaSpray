@@ -37,14 +37,6 @@
 <td height="15"></td>
 </tr>
 <tr>
-<td width="20" valign="top"><i class="fa fa-phone textred14px"></i></td>
-<td>+91 - 22 - 27412575 / 27412785</td>
-</tr>    
-<tr>
-<td height="15"></td>
-<td height="15"></td>
-</tr>
-<tr>
 <td width="20" valign="top"><i class="fa fa-mobile textred14px"></i></td>
 <td>+91 9820718722 / 9820231088</td>
 </tr>      
