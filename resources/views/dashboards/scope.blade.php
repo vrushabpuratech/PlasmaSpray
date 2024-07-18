@@ -18,7 +18,7 @@
     <div class="row">
     <div class="col-md-10">
     <div class="mainheading"><h2>We provide services of Thermal spray coating on machine parts or components. </h2></div>  
-    <div class="textblack14cont">It involves the use of a torch to heat a material, in powder or wire form, to a molten or near-molten state, and the use of a gas to propel the material to the target substrate, creating a completely new surface. The coating material may be a single element, alloy or compound with unique physical properties that are, in most cases, achievable only through the thermal spray process.</div>    
+    <div class="textblack14cont">It involves using a torch to heat material, in powder or wire form, to a molten or near-molten state. A gas propels this material to the target surface, creating a new layer. The coating can be a single element, alloy, or compound with unique properties that are often only possible through thermal spraying.</div>    
     </div>    
     <div class="col-md-2"></div>    
     </div>        
