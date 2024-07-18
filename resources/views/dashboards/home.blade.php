@@ -167,25 +167,25 @@ Mirror like Finish on your parts</div>
           <div class="compboxes">
             <div class="row">
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="rangeofproducts.html#Tungsten">
+                <div class="solutionbox"> <a href="{{ route ('range-of-products')}}#Tungsten">
                   <div class="solutionname">Tungsten <br/>
                     Carbide</div>
                   <img src="{{ asset('dist/img/tungsten.jpg') }}" alt="Tungsten Carbide"/> </a> </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="rangeofproducts.html#Ceramic">
+                <div class="solutionbox"> <a href="{{ route ('range-of-products')}}#Ceramic">
                   <div class="solutionname">Ceramic <br/>
                     Coating</div>
                   <img src="{{ asset('dist/img/ceramic_coating.jpg') }}" alt="Ceramic Coating"/> </a> </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="rangeofproducts.html#Chrome">
+                <div class="solutionbox"> <a href="{{ route ('range-of-products')}}#Chrome">
                   <div class="solutionname">Chrome <br/>
                     Oxide</div>
                   <img src="{{ asset('dist/img/chrome.jpg') }}" alt="Chrome Oxide"/> </a> </div>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6">
-                <div class="solutionbox"> <a href="rangeofproducts.html#Stellite">
+                <div class="solutionbox"> <a href="{{ route ('range-of-products')}}#Stellite">
                   <div class="solutionname">Stellite</div>
                   <img src="{{ asset('dist/img/stellite.jpg') }}" alt="Stellite"/> </a> </div>
               </div>
