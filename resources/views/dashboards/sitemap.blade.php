@@ -17,8 +17,8 @@
     <div class="textred16bold">About us</div>  
     <div class="textblack14cont">    
     <ul>    
-    <li><a href="aboutus.html">Company Profile</a></li>
-    <li><a href="catalogue.html">Catalogue</a></li>
+    <li><a href="{{ route('about-us') }}">Company Profile</a></li>
+    <li><a href="{{ route('catalogue') }}">Catalogue</a></li>
     </ul>    
     </div>    
     </div>	
@@ -26,8 +26,8 @@
     <div class="textred16bold">Services</div>      
     <div class="textblack14cont">    
     <ul>    
-    <li><a href="scope.html">Scope of Services</a></li>
-    <li><a href="rangeofproducts.html">Range Of Products</a></li>
+    <li><a href="{{ route('scope') }}">Scope of Services</a></li>
+    <li><a href="{{ route('range-of-products') }}">Range Of Products</a></li>
     </ul>    
     </div>    
     </div>		
@@ -35,11 +35,11 @@
     <div class="textred16bold">Procesess</div>          
     <div class="textblack14cont">    
     <ul>
-    <li><a href="plasma_trans_arc.html">Plasma Transferred ARC</a></li>
-    <li><a href="powder_flame_spray.html">Powder Flame Spraying</a></li>
-    <li><a href="arc_spraying.html">Arc Spraying</a></li>
-    <li><a href="hvofs.html">High Velocity Oxygen Fuel Spraying</a></li>
-    <li><a href="plasma_sparying.html">Plasma Spraying </a></li>
+        <li><a href="{{ route('plasma-trans-arc') }}">Plasma Transferred Arc</a></li>
+        <li><a href="{{ route('powder-flame-spray') }}">Powder Flame Spraying</a></li>
+        <li><a href="{{ route('arc-spraying') }}">Arc Spraying</a></li>
+        <li><a href="{{ route('hvofs') }}">High Velocity Oxygen Fuel Spraying</a></li>
+        <li><a href="{{ route('plasma-spraying') }}">Plasma Spraying </a></li>
     </ul>    
     </div>    
     </div>	
@@ -49,18 +49,18 @@
     <div class="col-xs-6">
     <div class="textblack14cont">
     <ul>
-    <li><a href="contactus.html">Contact us</a></li>
-    <li><a href="enquiry.html">Enquiry</a></li>
-    <li><a href="photogallery.html">Photo Gallery</a></li>    
+    <li><a href="{{ route('dashboards.contactus') }}">Contact us</a></li>
+    <li><a href="{{ route('dashboards.enquiry') }}">Enquiry</a></li>
+    <li><a href="{{ route('photo-gallery') }}">Photo Gallery</a></li>    
     </ul>        
     </div>    
     </div> 
     <div class="col-xs-6">
     <div class="textblack14cont">
     <ul>
-    <li><a href="sitemap.html">Sitemap</a></li>
-    <li><a href="privacypolicy.html">Privacy Policy</a></li>
-    <li><a href="termsnconditions.html">Terms and Conditions</a></li>    
+    <li><a href="{{ route('sitemap') }}">Sitemap</a></li>
+    <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
+    <li><a href="{{ route('terms-and-conditions') }}">Terms and Conditions</a></li>    
     </ul>        
     </div>    
     </div>    

@@ -6,38 +6,39 @@
 <!-- Accordian css and script start-->  
 <!--Inner Heading start here-->
 <div class="innerheading">
-<div class="container"><h1>Scope of Services</h1></div>    
-</div>  
-<!--Inner Heading end here-->
+    <div class="container"><h1>Scope of Services</h1></div>    
+    </div>  
+    <!--Inner Heading end here-->
+        
+    <!--We provide services start here-->    
+    <div class="whitecontarea">
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+    <div class="row">
+    <div class="col-md-10">
+    <div class="mainheading"><h2>We provide services of Thermal spray coating on machine parts or components. </h2></div>  
+    <div class="textblack14cont">It involves the use of a torch to heat a material, in powder or wire form, to a molten or near-molten state, and the use of a gas to propel the material to the target substrate, creating a completely new surface. The coating material may be a single element, alloy or compound with unique physical properties that are, in most cases, achievable only through the thermal spray process.</div>    
+    </div>    
+    <div class="col-md-2"></div>    
+    </div>        
+    </div>
     
-<!--We provide services start here-->    
-<div class="whitecontarea">
-<div class="container">
-<div class="row">
-<div class="col-sm-6">
-<div class="row">
-<div class="col-md-10">
-<div class="mainheading"><h2>We provide services of Thermal spray coating on machine parts or components. </h2></div>  
-<div class="textblack14cont">It involves using a torch to heat material, in powder or wire form, to a molten or near-molten state. A gas propels this material to the target surface, creating a new layer. The coating can be a single element, alloy, or compound with unique properties that are often only possible through thermal spraying.</div>    
-</div>    
-<div class="col-md-2"></div>    
-</div>        
-</div>
-<div class="col-sm-6 rowmargin"><img src="{{ asset('website/img/servicesimg.jpg') }}" class="img-responsive" alt="Typical problem and coating choices"></div>    
-</div>
-<div class="mainheading topmargin30"><h4>What are the typical problems and coating choices available to solve them?</h4></div>  
-<div class="row">
-<div class="col-sm-6"><img src="{{ asset('website/img/benefits_diagram01.jpg') }}" class="img-responsive" alt="Problems faced by Industry">
-<div class="textred13bold topmargin5"><em>Problems faced by Industry</em></div>    
-</div>
-<div class="col-sm-6 rowmargin20"><img src="{{ asset('website/img/benefits_diagram02.jpg') }}" alt="Types of Costing" class="img-responsive">
-<div class="textred13bold topmargin5"><em>Types of Coatings</em></div>    
-</div>    
-</div>    
-</div>    
-</div>
-<!--We provide services end here-->
-    
+    <div class="col-sm-6 rowmargin"><img src="{{ asset('dist/img/servicesimg.jpg') }}" class="img-responsive" alt="Typical problem and coating choices"></div>    
+    </div>
+    <div class="mainheading topmargin30"><h4>What are the typical problems and coating choices available to solve them?</h4></div>  
+    <div class="row">
+    <div class="col-sm-6"><img src="{{ asset('dist/img/benefits_diagram01.jpg') }}" class="img-responsive" alt="Problems faced by Industry">
+    <div class="textred13bold topmargin5"><em>Problems faced by Industry</em></div>    
+    </div>
+    <div class="col-sm-6 rowmargin20"><img src="{{ asset('dist/img/benefits_diagram02.jpg') }}" alt="Types of Costing" class="img-responsive">
+    <div class="textred13bold topmargin5"><em>Types of Coatings</em></div>    
+    </div>    
+    </div>    
+    </div>    
+    </div>
+    <!--We provide services end here-->
+        
 <!--Accordion area start here-->    
 <div class="graycontarea">
 <div class="container">

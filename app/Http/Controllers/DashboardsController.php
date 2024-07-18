@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Mail\ContactFormMail;
+use App\Mail\EnquiryFormMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 
@@ -69,36 +71,60 @@ class DashboardsController extends Controller
     {
         return view('dashboards.terms-and-condition');
     }
-    
+
     public function contactus()
     {
         return view('dashboards.contactus');
     }
+
+    public function enquiryform(Request $request)
+    {
+        $validatedData = $request->validate([
+            'partname' => 'string|max:255',
+            'function_of_coating' => 'string',
+            'type_of_coating' => 'string',
+            'coating_thickness' => 'string',
+            'surface_finish' => 'string',
+            'new_or_old_job' => 'string',
+            'diaofjob' => 'string|max:255',
+            'coating_length_of_job' => 'string|max:255',
+            'total_length_of_job' => 'string|max:255',
+            'weight_of_job' => 'nullable|string|max:255',
+            'drawing' => 'string|in:yes,no',
+            'photo' => 'string|in:yes,no',
+            'require_customization' => 'nullable|string',
+            'company_name' => 'nullable|string|max:255',
+            'contact_person_name' => 'nullable|string|max:255',
+            'contact_no' => 'nullable|string|regex:/^[0-9]{0,20}$/',
+            'email' => 'nullable|email|max:255',
+            'address' => 'nullable|string',
+            'remarks' => 'nullable|string',
+        ]);
+
+        Mail::to('vrushab@puratech.in')->send(new EnquiryFormMail($validatedData));
+
+        return redirect()->back()->with('success', 'Message sent successfully!');
+    }
+
     public function enquiry()
     {
         return view('dashboards.enquiry');
     }
-    
+
     public function saveform(Request $request)
     {
-        //dd($request);
-        // Validate the form data (example validation)
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|max:255',
-            'mobile' => 'required|string|max:20', 
+            'mobile' => 'required|string|max:20',
             'city' => 'required|string|max:100',
             'state' => 'required|string|max:100',
             'country' => 'required|string|max:100',
             'message' => 'required',
         ]);
 
-//        dd($validatedData);
-
-        // Send email notification
         Mail::to('moin@puratech.in')->send(new ContactFormMail($validatedData));
 
-        // Redirect back with success message or any other logic
         return redirect()->back()->with('success', 'Message sent successfully!');
     }
 
@@ -116,6 +142,4 @@ class DashboardsController extends Controller
     {
         return view('dashboards.plasma-trans-arc');
     }
-   
-   
 }
